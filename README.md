@@ -23,12 +23,21 @@ the final figure at the size at which it will appear in the manuscript.
 ## Installation for collaborators
 
 The recommended collaboration workflow is to clone the repository once and
-install it in editable mode inside each Conda environment that needs it.
+install it in editable mode inside each Conda environment that needs it. Open a
+terminal window and navigate to the directory you ant to install the project
+in. Clone the repo by using
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/aps-plotter.git
-cd aps-plotter
+cd path/to/install/location
+```
+```bash
+git clone https://github.com/BryanFRezende/aps-plotter.git
+```
+Then pip install the module. If you use conda, here's an example of how to
+install in a particular environment.
 
+```bash
+cd aps-plotter
 conda activate YOUR_ENVIRONMENT
 python -m pip install -e .
 ```
